@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wander Go - Your Travel Partner</title>
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Wander Go<sup><i> your travel partner🌍</i></sup></h1>
+        <marquee class="marquee-text">
+            <i>Welcome to Wander Go! ✈️🌍 Your journey to unforgettable adventures begins here. 
+            From breathtaking landscapes to vibrant cities, we bring you closer to the world’s most amazing destinations. 
+            Whether you’re seeking adventure, relaxation, or new experiences, we’ve got you covered.</i>
+        </marquee>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="nav-links">
+            <a href="file:///C:/Users/divas/OneDrive/Desktop/gse%20pro/project.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Destinations</a>
+            <a href="file:///C:/Users/divas/OneDrive/Desktop/gse%20pro/hotels.html">Hotels</a>
+            <a href="#">Contacts</a>
+        </div>
+    </nav>
+
+    <!-- Featured Destinations with Swiper -->
+    <section class="destinations">
+        <h3>Featured Destinations</h3>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="delhi2.jpg" alt="Delhi">
+                    <h4>Delhi (Capital of India)</h4>
+                    <p>Delhi is a bustling city with a rich history. It boasts iconic landmarks such as the Red Fort, Qutub Minar, and Humayun’s Tomb.</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="manali.jpg" alt="Manali">
+                    <h4>Manali (A Himalayan Retreat)</h4>
+                    <p>Manali is a paradise for adventure seekers, offering activities like skiing, trekking, and paragliding.</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="Kashmir.jpg" alt="Kashmir">
+                    <h4>Kashmir (The Paradise on Earth)</h4>
+                    <p>Kashmir is renowned for its breathtaking landscapes, from tranquil lakes to lush gardens.</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="goa.jpg" alt="Goa">
+                    <h4>Goa (The Beach Paradise)</h4>
+                    <p>Goa is known for its sandy shores, vibrant nightlife, and Portuguese-influenced culture.</p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+    </script>
+
+</body>
+</html>

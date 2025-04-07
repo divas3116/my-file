@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-section {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(242, 240, 240, 0.926);
+    flex-direction: row-reverse;
+
+}
+
+.service-info {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+.service img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service.reverse {
+    flex-direction: row-reverse;
+}
